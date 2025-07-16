@@ -1302,7 +1302,7 @@ checkConfig() {
 
         # 测试API连接
         echo "正在测试API权限..."
-        api_url="${panel_address}/api/v1/${secure_path}/server/manage/getNodes"
+        api_url="${panel_address}/api/v2/${secure_path}/server/manage/getNodes"
         echo "尝试API URL: $api_url"
         echo "使用认证: Authorization: ${auth_data}"
 
