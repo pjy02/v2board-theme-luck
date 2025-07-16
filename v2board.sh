@@ -1445,7 +1445,7 @@ postData() {
     log "INFO" "正在获取当前服务器信息..."
 
     # 根据认证方式获取当前服务器的tags信息
-    api_url="${panel_address}/api/v1/${secure_path}/server/manage/getNodes"
+    api_url="${panel_address}/api/v2/${secure_path}/server/manage/getNodes"
     if [[ "$auth_method" == "param" ]]; then
         current_server=$(curl -s "${api_url}?auth_data=${auth_data}" | \
             jq -r ".data[] | select(.id == ${server_id} and .type == \"${server_type}\")")
@@ -1554,7 +1554,7 @@ postData() {
 
     # 调用V2Board现有的服务器保存API
     log "INFO" "正在上传解锁信息到V2Board..."
-    save_url="${panel_address}/api/v1/${secure_path}/server/${server_type}/save"
+    save_url="${panel_address}/api/v2/${secure_path}/server/${server_type}/save"
     echo "保存URL: $save_url"
 
     if [[ "$auth_method" == "param" ]]; then
