@@ -1554,7 +1554,7 @@ postData() {
 
     # 调用V2Board现有的服务器保存API
     log "INFO" "正在上传解锁信息到V2Board..."
-    save_url="xbt.998866.top/api/v1/${secure_path}/server/${server_type}/save"
+    save_url="https://xbt.998866.top/api/v1/${secure_path}/server/${server_type}/save"
     echo "保存URL: $save_url"
 
     if [[ "$auth_method" == "param" ]]; then
