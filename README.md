@@ -301,7 +301,7 @@ nano /www/wwwroot/your-domain.com/server/config.json
 
 ```bash
 # 一键下载并运行脚本（推荐方式）
-bash <(wget -qO- https://raw.githubusercontent.com/q42602736/v2board-theme-luck/main/v2board.sh)
+bash <(wget -qO- https://github.com/pjy02/v2board-theme-luck/raw/refs/heads/main/v2board.sh)
 ```
 
 #### 2. 手动下载使用
